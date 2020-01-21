@@ -74,13 +74,19 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int listPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         String listTitle = (String) getGroup(listPosition);
+        String[] names = listTitle.split("_");
+        String version = names[0];
+        String date = names[1];
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.list_group, null);
         }
         TextView listTitleTextView = (TextView) convertView.findViewById(R.id.list_title2);
         listTitleTextView.setTypeface(null, Typeface.BOLD);
-        listTitleTextView.setText(listTitle);
+        listTitleTextView.setText(version);
+        TextView tv_date = (TextView) convertView.findViewById(R.id.tv_date);
+        tv_date.setTypeface(null, Typeface.BOLD);
+        tv_date.setText(date);
 
         ImageView ivGroupIndicator = (ImageView)  convertView.findViewById(R.id.ivGroupIndicator);
         ivGroupIndicator.setSelected(isExpanded);

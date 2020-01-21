@@ -93,59 +93,69 @@ public class MainActivity extends AppCompatActivity {
                             String ver = jsonObject1.getString("ver");
                             String name = jsonObject1.getString("name");
                             String api = jsonObject1.getString("api");
-                            listDataHeader.add(String.valueOf(i));
                             if (i == 0) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top0.add(ver);
                                 top0.add(name);
                                 top0.add(api);
                             } else if (i == 1) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top1.add(ver);
                                 top1.add(name);
                                 top1.add(api);
                             } else if (i == 2) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top2.add(ver);
                                 top2.add(name);
                                 top2.add(api);
                             } else if (i == 3) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top3.add(ver);
                                 top3.add(name);
                                 top3.add(api);
                             } else if (i == 4) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top4.add(ver);
                                 top4.add(name);
                                 top4.add(api);
                             } else if (i == 5) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top5.add(ver);
                                 top5.add(name);
                                 top5.add(api);
                             } else if (i == 6) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top6.add(ver);
                                 top6.add(name);
                                 top6.add(api);
                             } else if (i == 7) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top7.add(ver);
                                 top7.add(name);
                                 top7.add(api);
                             } else if (i == 8) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top8.add(ver);
                                 top8.add(name);
                                 top8.add(api);
                             } else if (i == 9) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top9.add(ver);
                                 top9.add(name);
                                 top9.add(api);
                             } else if (i == 10) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top10.add(ver);
                                 top10.add(name);
                                 top10.add(api);
                             } else if (i == 11) {
+                                listDataHeader.add(String.valueOf(i) + "_" + ver);
                                 top11.add(ver);
                                 top11.add(name);
                                 top11.add(api);
                             }
                             Log.d("info >> ", "onResponse: >>> " + i + ver + name + api);
                         }
-//                        mRecyclerView.setAdapter(mAdapter);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

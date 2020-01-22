@@ -16,11 +16,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:paddingLeft="5dp"
+            android:text="20 \n Jan"
+            android:textSize="15sp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:text="20 Jan"
-            android:textColor="@android:color/black" />
+            android:background="@drawable/rounded_textview"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -36,9 +38,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.8"
+                android:text="122"
+                android:gravity="center"
                 android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:textColor="@android:color/black" />
 
             <ImageView
@@ -47,7 +49,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="10dp"
                 android:layout_weight="0.06"
                 android:background="@drawable/group_indicator" />
         </LinearLayout>

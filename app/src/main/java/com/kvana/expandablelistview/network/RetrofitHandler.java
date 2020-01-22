@@ -1,5 +1,7 @@
 package com.kvana.expandablelistview.network;
 
+import com.kvana.expandablelistview.Model;
+
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -9,7 +11,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class RetrofitHandler {
-    public static final String BASE_URL = "https://api.learn2crack.com";
+//    public static final String BASE_URL = "https://api.learn2crack.com";
+    public static final String BASE_URL = "https://veezee.app";
 //    https://api.learn2crack.com/android/jsonandroid/
     private static final RetrofitHandler ourInstance = new RetrofitHandler();
 
@@ -34,5 +37,9 @@ public class RetrofitHandler {
 
     public Call<String> getNamesList() {
         return namesApikeys.getList();
+    }
+
+    public Call<String> getData(String content, Model model) {
+        return namesApikeys.getdata(content, model);
     }
 }

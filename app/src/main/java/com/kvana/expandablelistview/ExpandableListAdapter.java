@@ -76,7 +76,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         String listTitle = (String) getGroup(listPosition);
         String[] names = listTitle.split("_");
         String version = names[0];
-        String date = names[1];
+        String date = names[1].replace(" ", "\n");
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.list_group, null);
